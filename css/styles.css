@@ -727,10 +727,11 @@ img {
 .close-btn:focus {
     /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08); */
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.close-btn:active{
+.close-btn:active {
     background-color: var(--activ-btn-color);
 }
 
@@ -786,7 +787,7 @@ img {
     margin-top: 8px;
 }
 
-.modal-item:nth-last-child(1){
+.modal-item:nth-last-child(1) {
     margin-top: 16px;
 }
 
@@ -813,11 +814,11 @@ img {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.input-wrapper{
+.input-wrapper {
     position: relative;
 }
 
-.modal-icon{
+.modal-icon {
     position: absolute;
     width: 18px;
     height: 24px;
@@ -830,19 +831,18 @@ img {
     transition: fill var(--transition-type);
 }
 
-.modal-input:focus + .modal-icon{
+.modal-input:focus + .modal-icon {
     fill: var(--iris);
 }
 
-
-.acceptance{
+.acceptance {
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     position: absolute;
 }
 
-.centering{
+.centering {
     display: flex;
     align-items: center;
 
@@ -852,7 +852,7 @@ img {
     color: #757575;
 }
 
-.acceptance-icon{
+.acceptance-icon {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -864,23 +864,38 @@ img {
     transition: background-color var(--transition-type);
 }
 
-.acceptance:checked + .acceptance-icon{
+.acceptance:checked + .acceptance-icon {
     background-color: var(--activ-btn-color);
     background-size: contain;
     background-origin: border-box;
     border-color: transparent;
 }
 
-.link-privacy{
+.link-privacy {
     color: var(--iris);
     display: inline-block;
 }
 
-.modal-btn-snd{
+.modal-btn-snd {
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-top: 24px;
+
+    width: 169px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--iris);
+    color: var(--white);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
 }
 
 /* Subscribe */
