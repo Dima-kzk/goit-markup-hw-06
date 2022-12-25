@@ -904,6 +904,10 @@ img {
     border: none;
 }
 
+.modal-btn-snd:active{
+    background-color: var(--activ-btn-color);
+}
+
 /* Subscribe */
 .right-side {
     margin-left: auto;
@@ -972,5 +976,9 @@ img {
     width: 24px;
 	height: 24px;
     margin-left: 16px;
+}
+
+.Subscribe-btn:active{
+    background-color: var(--activ-btn-color);
 }
 
