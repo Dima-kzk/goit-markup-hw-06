@@ -682,7 +682,6 @@ img {
 
 .modal {
     width: 408px;
-    min-height: 584px;
     background-color: var(--modal-color);
     padding-top: 72px;
     padding-left: 24px;
@@ -751,6 +750,7 @@ img {
 }
 
 .modal-label {
+    /* position: relative; */
     display: block;
     font-size: 12px;
     color: var(--light-slate);
@@ -767,8 +767,8 @@ img {
     display: block;
     width: 100%;
     margin-top: 4px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     padding-left: 38px;
     padding-right: 16px;
 
@@ -800,6 +800,8 @@ img {
 }
 
 .modal-comment {
+    display: block;
+
     font-size: 12px;
     line-height: 1.33333;
 
@@ -834,7 +836,7 @@ img {
 
     left: 16px;
     bottom: 50%;
-    transform: translateY(50%);
+    transform: translateY(95%);
 
     fill: var(--navy-blue);
     transition: fill var(--transition-type);
@@ -870,12 +872,46 @@ img {
     transition: background-color var(--transition-type);
 }
 
+.acceptance:focus + .acceptance-icon
+{
+    background-image: url(../images/checkbox_empty.svg);
+    /* background-origin: content-box; */
+    border: 2px solid var(--iris);
+    border-radius: 3px;
+}
+
+
 .acceptance:checked + .acceptance-icon {
+    background-image: url(../images/checkbox_Default.svg);
+    background-color: var(--activ-btn-color);
+    background-origin: border-box;
+    border-color: transparent;
+    border-radius: 3px;
+}
+
+/* .acceptance:checked.acceptance:focus + .acceptance-icon{
+    background-image: url(../images/checkbox_Default_big.svg);
+    border-radius: 3px;
+    background-origin: border-box;
+    border-color: transparent;
+} */
+
+.acceptance:checked.acceptance:hover.acceptance.focus + .acceptance-icon{
+    background-color: var(--activ-btn-color);
+}
+
+.acceptance:checked.acceptance:hover + .acceptance-icon{
+    background-color: var(--activ-btn-color);
+}
+
+.acceptance:checked.acceptance:hover + .acceptance-icon {
     background-color: var(--activ-btn-color);
     background-size: contain;
     background-origin: border-box;
     border-color: transparent;
 }
+
+
 
 .link-privacy {
     color: var(--iris);
@@ -950,7 +986,7 @@ img {
     border-color: var(--iris);
 }
 
-.Subscribe-btn {
+.subscribe-btn {
     display: flex;
     align-items: center;
     width: 165px;
@@ -969,7 +1005,7 @@ img {
     border-radius: 4px;
 }
 
-.Subscribe-btn::after{
+.subscribe-btn::after{
     content: '';
     background-image: url(../images/icon%20send.svg);
     background-repeat: no-repeat;
@@ -978,7 +1014,7 @@ img {
     margin-left: 16px;
 }
 
-.Subscribe-btn:active{
+.subscribe-btn:active{
     background-color: var(--activ-btn-color);
 }
 
