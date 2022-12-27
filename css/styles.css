@@ -216,14 +216,18 @@ img {
 }
 
 .appeal {
-    max-width: 264px;
+    width: 264px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 .footer-layout {
     display: flex;
-    gap: 120px;
+    /* gap: 120px; */
+}
+
+.social-margin{
+    margin-left: 120px;
 }
 
 .fotter-title {
@@ -945,14 +949,16 @@ img {
 }
 
 /* Subscribe */
-.right-side {
-    margin-left: auto;
-}
+
 
 .set-line {
     display: flex;
     align-items: flex-end;
     gap: 24px;
+}
+
+.subscribe-margin{
+    margin-left: 80px;
 }
 
 .email {
